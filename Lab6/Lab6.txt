@@ -1,0 +1,23 @@
+Dynamic Routing Protocol:
+
+RIP(Routing information protocol)
+
+1)RIPv1-broadcast message to save info,
+no VLSM(variable length subnet mask)(only network address is sent),
+IPv4,no authentication
+2)RIPv2-multicast address pair,VLSM,IPv4,authentication
+3)RIPng(next gen)-multicast address pair,VLSM,IPv6,authentication
+
+Frequence,distance affects routing
+
+Metric: Hop Count(max hop count-15/16)
+Timers: update timer(periodic 30s),invalid,hold down,flush
+
+Split horizon(info wont be broadcasted to the source)
+poison reverse(max dist would be broadcasted to the source)
+
+
+
+router rip->version 2->network directlyConnectedAddress
+->exit
+go to router1 cli

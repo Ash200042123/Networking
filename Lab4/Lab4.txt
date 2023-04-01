@@ -1,0 +1,33 @@
+ARP- Address Resolutuon Protocol
+
+If you know the ip address the mac address can be found through ARP
+
+In ARP table ip address and mac address are stored. Constantly update
+
+Network layer: Source(IP)-Destination(IP)-Payload
+Data Link: S-D
+
+If i dont know the mac address then i need to find the mac 
+address which will be a arp event.
+
+ARP event will always be within a single network.
+Source would be mine ip address but destination would be switches mac address.
+
+Whenevr a pc is connected arp event can take place
+
+arp -a shows mac address connected
+arp -d deletes
+
+
+----------------------------------------------------
+Logical Addresing
+
+Classful Addressing: Divided into 5 classes: A-E
+A-> [0_ _ _ _ _ _ _]. 2nd. 3rd. 4th-CIDR: /8 - (0 - 2^7-1)-Subnet mask would be 255.0.0.0
+B-> [1 0 _ _ _ _ _ _.	].	.	-CIDR: /16- (128-191)
+C-> [1 1 0 _ _ _ _ _.	.	].	- (192-223)
+D-> 1 1 1 0 _ _ _ _.	.	.	- (224-239)
+E-> 1 1 1 1 _ _ _ _.	.	.	- (240-255)
+
+ABC was meant for normal uses and DE for special uses.
+Network address- first address of the range, Broadcast address- last address of the range(if sent to this address then everyone will receive)

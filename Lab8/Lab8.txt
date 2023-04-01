@@ -1,0 +1,27 @@
+VLAN conf::
+
+
+
+Ports in VLAN:
+1) Access-> Single VLAN
+2) Trunk-> Carry Multiple VLAN
+
+
+Commands:
+
+
+1) show vlan
+
+(connecting access ports)
+2) en--> conf t--> vlan 10(creates a vlan where 10 is the id)
+--> name teacher --> int fa0/1
+--> switchport mode access
+-->switchport access vlan 10
+-->int range fa0/1-10(for interfacxe of multiple range)
+
+(connecting trunk ports)
+2) en--> conf t --> int fa0/11
+--> switchport mode trunk
+-->switchport trunk allowed vlan 10-20
+
+show running config

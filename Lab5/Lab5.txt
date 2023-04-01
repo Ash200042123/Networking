@@ -1,0 +1,30 @@
+if network address is different then we need layer 3 device eg. router.
+
+layer 2 device/router can only work with arp.
+
+direct connection between switches wont work if they're different network.
+
+port/interface
+
+each interface in a router will have a different address.
+
+broadcast domain
+
+first valid host address will be the ip address of the interface/port.
+
+? will show all available commands
+
+first 2/3 letters then tab
+
+en->conf t->int gig0/0/0->ip address 192.168.1.1 255.255.255.0->no shutdown
+
+*show running-config, copy running-config startup-config
+*show ip route
+
+DC-DT cable. On one part clockspeed is set other part just follows it.
+
+if we want to connect 2 routers then it has to be in same network
+
+Routing can be set in two ways: Port address and ip address.
+
+for default route 0.0.0.0 0.0.0.0 (right-router ip address)

@@ -1,0 +1,27 @@
+IP address/ Logical/ Network/Layer 3
+
+Network ID have to be same. We get network ID by ANDing IP 
+address and subnet mask.
+
+ICMP message- Internet Control Message Protocol-Used for 
+diagonostics
+If an IP address is alive or if I am connected.
+
+'ipconfig' -> ping 10.220.47.49
+
+
+DHCP-automatically assigns IP address
+
+To set IP manually:
+network connections->ethernet-> properties->internet protocol v4
+
+flooding when message is sent before switch can process info
+of new PC or insert into the table.
+
+
+Let in any network,
+IP Address- 10.220.10.5
+Subnet Mask- 255.255.255.0
+Network ID- 10.220.10.0
+
+So, Possible IP Address of the devices in the network can be: 10. 220. 10. (1-255)
